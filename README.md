@@ -1,3 +1,4 @@
 ## Sentiment Evolution of Movie Transcripts
 
-![alt text](http://url/to/img.png)
+![ezcv logo](https://raw.githubusercontent.com/kcandost/TDI_Capstone/master/img/Joker_evolution.pdf)
+
