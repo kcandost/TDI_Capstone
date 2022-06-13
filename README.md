@@ -18,7 +18,7 @@ There are 10 basis dimensions in NRC Lexicon: Positive, Negative, Anger, Trust, 
  * Preprocessing the transcript
  * Splitting into 12 pieces. 
  * Using NRCLex on each portion to get sentiment scores 
-This yields a 10x12=120 dimensional sentiment vector for each movie transcript. Using only this portion as the feature matrix, I used a randomforest to predict the scores.
+This yields a 10x12=120 dimensional sentiment vector for each movie transcript. Using only this portion as the feature matrix, I used a randomforest to predict the scores. The sample set has a normal distribution of imdb [scores](https://raw.githubusercontent.com/kcandost/TDI_Capstone/master/img/score_distribution.jpg).
 ### Visualization
 I used wordcloud and matplotlib to generate the following plots for a given movie:
  * A cumulative sentiment evolution 
