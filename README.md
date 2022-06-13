@@ -12,7 +12,7 @@ I wanted to test the strength of 'Sentiment Evolution' of a movie script as a me
 I scraped [imdb.com](https://www.imdb.com/) for genre and score and [imsdb.com]( https://imsdb.com/) for the movie transcripts for 900 movies using BeautifulSoup and web requests.
   * I performed data cleaning and preprocessing using standard NLP tools.
   * I chose NRCLex for the supervised NLP model to perform sentiment analysis.
-  * Main tools: Pandas, Beatifulsoup, Requests, Matplotlib, NLP libraries (nltk, NRCLex).
+  * Main tools: `Pandas`, `Beatifulsoup`, `Requests`, `Matplotlib`, NLP libraries (`nltk`, `NRCLex`).
 ### Model 
 There are 10 basis dimensions in NRC Lexicon: Positive, Negative, Anger, Trust, Anticipation, Joy, Fear, Sadness, Surprise, and Disgust. The feature matrix is constructed by applying the following workflow for each movie:
  * Preprocessing the transcript
@@ -20,7 +20,7 @@ There are 10 basis dimensions in NRC Lexicon: Positive, Negative, Anger, Trust, 
  * Using NRCLex on each portion to get sentiment scores 
 This yields a 10x12=120 dimensional sentiment vector for each movie transcript. Using only this portion as the feature matrix, I used a randomforest to predict the scores. The sample set has a normal distribution of imdb [scores](https://raw.githubusercontent.com/kcandost/TDI_Capstone/master/img/score_distribution.jpg).
 ### Visualization
-I used wordcloud and matplotlib to generate the following plots for a given movie:
+I used `wordcloud` and `matplotlib` to generate the following plots for a given movie:
  * A cumulative sentiment evolution 
 
 <p align="center">
